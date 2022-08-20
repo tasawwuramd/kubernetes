@@ -30,17 +30,23 @@ Kubernetes Setup
 
 V7
 Minikube
+
     - Too user to run K8s Locally
     - Minikube runs a single-node cluster of K8s inside a linux VM
     - Works with Windows, Linux, and Mac OS
 
 V8
 Starting Minikube
+
     - Download Minikube
+
         - Run "minikube start" 
+
             - to start minikube cluster
         - minikube version
+
             - to check version of minikube
+
 In windows home edition hyper-v is not available so we can use virtual box to run minikube/kubernetes
 
     - Install kubectl to run kubernetes commands
@@ -53,15 +59,23 @@ To open minikube dashboard
 
 Example:
     - Create Deployment
+
         - kubectl create deployment hello-minikube --image=k8s.gcr.io/echoserver:1.4
+
     - Exposing node port
+        
         - kubectl expose deployment hello-minikube --type=NodePort --port=8000
+
     - Start minikube service
+        
         - minikube service hello-minikube
+
     - Stop minikube
+
         - minikube stop
+
     - Clear all minikube and fresh start
+    
         - minikube delete
 
 V9 
- 
